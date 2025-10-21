@@ -1,0 +1,68 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\123pi\\Desktop\\lista_2k\\lista\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DE850D8B-B533-44EE-BBC8-2CB1FF5EF288}|lista.vcxproj|C:\\Users\\123pi\\Desktop\\lista_2k\\src\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE850D8B-B533-44EE-BBC8-2CB1FF5EF288}|lista.vcxproj|C:\\Users\\123pi\\Desktop\\lista_2k\\src\\lista.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE850D8B-B533-44EE-BBC8-2CB1FF5EF288}|lista.vcxproj|C:\\Users\\123pi\\Desktop\\lista_2k\\src\\lista.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "lista.h",
+              "DocumentMoniker": "C:\\Users\\123pi\\Desktop\\lista_2k\\src\\lista.h",
+              "RelativeDocumentMoniker": "..\\src\\lista.h",
+              "ToolTip": "C:\\Users\\123pi\\Desktop\\lista_2k\\src\\lista.h",
+              "RelativeToolTip": "..\\src\\lista.h",
+              "ViewState": "AgIAABYAAAAAAAAAAADwvxsAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-10-21T06:42:46.846Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "lista.cpp",
+              "DocumentMoniker": "C:\\Users\\123pi\\Desktop\\lista_2k\\src\\lista.cpp",
+              "RelativeDocumentMoniker": "..\\src\\lista.cpp",
+              "ToolTip": "C:\\Users\\123pi\\Desktop\\lista_2k\\src\\lista.cpp",
+              "RelativeToolTip": "..\\src\\lista.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-21T06:37:54.935Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Users\\123pi\\Desktop\\lista_2k\\src\\main.cpp",
+              "RelativeDocumentMoniker": "..\\src\\main.cpp",
+              "ToolTip": "C:\\Users\\123pi\\Desktop\\lista_2k\\src\\main.cpp",
+              "RelativeToolTip": "..\\src\\main.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-21T06:34:14.21Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
