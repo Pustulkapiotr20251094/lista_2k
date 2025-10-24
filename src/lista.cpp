@@ -34,6 +34,7 @@ void lista::pushBack(int value)//dodawanie elementu na konic listy
 	else {
 		tail->next = newNode;
 		newNode->prev = tail;
+		tail = newNode;
 
 	
 	}
@@ -83,6 +84,49 @@ void lista::displayForward() const
 
 
 }
+
+
+
+void lista::popFront() {
+	if (!head) return; // lista pusta
+	Node* temp = head;
+	head = head->next;
+	if (head) head->prev = nullptr;
+	else tail = nullptr;
+	delete temp;
+	sz--;
+}
+
+void lista::popBack() {
+	if (!tail) return; // lista pusta
+	Node* temp = tail;
+	tail = tail->prev;
+	if (tail) tail->next = nullptr;
+	else head = nullptr;
+	delete temp;
+	sz--;
+}
+
+void lista::clear() {
+	while (!empty()) {
+		popFront();
+	}
+}
+
+void lista::displayBackward() const {
+	Node* current = tail;
+	std::cout << "Zawartoœæ listy (od koñca): ";
+	while (current) {
+		std::cout << current->data << " ";
+		current = current->prev;
+	}
+	std::cout << "\n";
+}
+
+bool lista::empty() const {
+	return sz == 0;
+}
+
 
 
 
