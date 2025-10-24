@@ -37,6 +37,8 @@ public:
     void clear();
     void displayForward() const;
     void displayBackward() const;
+    void insertAt(int index, int value);  // dodaj element pod wskazany indeks
+    void removeAt(int index);             // usuñ element spod wskazanego indeksu
 
     /**
      * @brief Sprawdza, czy lista jest pusta.
@@ -78,6 +80,18 @@ public:
             current = current->next;
             return value;
         }
+
+        bool hasPrevious() const { return current != nullptr; }
+
+        int previous() {
+            int value = current->data;
+            current = current->prev;
+            return value;
+        }
+
+
+
+
     };
 
     /**

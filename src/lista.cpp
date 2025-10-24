@@ -1,5 +1,5 @@
-#include "lista.h" 
-
+ï»¿#include "lista.h" 
+#include <stdexcept> 
 
 
 
@@ -45,7 +45,7 @@ void lista::pushBack(int value)//dodawanie elementu na konic listy
 }
 
 
-void lista::pushFront(int value)//dodawanie lelmentu na pocz¹tek listy
+void lista::pushFront(int value)//dodawanie lelmentu na poczÄ…tek listy
 {
 	Node* newNode = new Node(value);
 	if (!head)
@@ -70,7 +70,7 @@ void lista::displayForward() const
 {
 	Node* current = head;
 
-	std::cout << "Zawartoœæ listy : ";
+	std::cout << "ZawartoÅ›Ä‡ listy : ";
 
 	while(current)
 	{ 
@@ -115,7 +115,7 @@ void lista::clear() {
 
 void lista::displayBackward() const {
 	Node* current = tail;
-	std::cout << "Zawartoœæ listy (od koñca): ";
+	std::cout << "ZawartoÅ›Ä‡ listy (od koÅ„ca): ";
 	while (current) {
 		std::cout << current->data << " ";
 		current = current->prev;
@@ -123,6 +123,63 @@ void lista::displayBackward() const {
 	std::cout << "\n";
 }
 
+
+
+void lista::insertAt(int index, int value) {
+	if (index < 0 || index > static_cast<int>(sz)) {
+		throw std::out_of_range("Niepoprawny indeks");
+	}
+
+	if (index == 0) {
+		pushFront(value);
+		return;
+	}
+	else if (index == static_cast<int>(sz)) {
+		pushBack(value);
+		return;
+	}
+
+	Node* newNode = new Node(value);
+	Node* current = head;
+
+	for (int i = 0; i < index - 1; ++i) {
+		current = current->next;
+	}
+
+	newNode->next = current->next;
+	newNode->prev = current;
+	current->next->prev = newNode;
+	current->next = newNode;
+
+	sz++;
+}
+
+// âœ… UsuÅ„ element spod wskazanego indeksu
+void lista::removeAt(int index) {
+	if (index < 0 || index >= static_cast<int>(sz)) {
+		throw std::out_of_range("Niepoprawny indeks");
+	}
+
+	if (index == 0) {
+		popFront();
+		return;
+	}
+	else if (index == static_cast<int>(sz) - 1) {
+		popBack();
+		return;
+	}
+
+	Node* current = head;
+	for (int i = 0; i < index; ++i) {
+		current = current->next;
+	}
+
+	current->prev->next = current->next;
+	current->next->prev = current->prev;
+	delete current;
+
+	sz--;
+}
 
 
 
