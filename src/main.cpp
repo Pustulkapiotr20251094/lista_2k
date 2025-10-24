@@ -1,39 +1,25 @@
-
-
+﻿
 #include <iostream>
 #include "lista.h"
+#include "Factory.h"
 
-
-int main()
-
-{
-   
-
+int main() {
+    // 🔹 Test podstawowych metod
     lista lista;
     lista.pushBack(10);
     lista.pushBack(20);
     lista.pushBack(30);
-    lista.pushFront(5);
-    lista.pushFront(1);
+
+    std::cout << "Zawartość listy: ";
     lista.displayForward();
 
-    std::cout << "\nWyswietlanie od konca:\n";
-    lista.displayBackward();
+    // 🔹 Test działania iteratora
+    std::cout << "\nIteracja po liście:\n";
+    auto it = lista.getIterator();
+    while (it.hasNext()) {
+        std::cout << it.next() << " ";
+    }
+    std::cout << "\n";
 
-    std::cout << "\nUsuwanie pierwszego i ostatniego elementu...\n";
-    lista.popFront();
-    lista.popBack();
-    lista.displayForward();
-
-    std::cout << "\nCzyszczenie listy...\n";
-    lista.clear();
-    lista.displayForward();
-    std::cout << "Rozmiar po czyszczeniu: " << lista.size() << "\n";
-
-    std::cout << (lista.empty() ? "Lista pusta\n" : "Lista niepusta\n");
-
-
-
-	return 0;
-
+    return 0;
 }

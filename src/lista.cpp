@@ -123,9 +123,6 @@ void lista::displayBackward() const {
 	std::cout << "\n";
 }
 
-bool lista::empty() const {
-	return sz == 0;
-}
 
 
 
