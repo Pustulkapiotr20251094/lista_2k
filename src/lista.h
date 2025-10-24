@@ -1,9 +1,9 @@
 #pragma once
 #include <cstddef>
+#include<iostream>
 
 
 
-// Szkielet pliku nag³ówkowego listy dwukierunkowej.
 
 
 struct Node { // Prosty wêze³ listy dwukierunkowej 
@@ -28,6 +28,13 @@ private:
 public:
 	lista();
 	~lista();
+
+	void pushBack(int value);//dodaj  na konic
+	void pushFront(int value);//dodaj  na poczatek 
+	void displayForward() const;//pokazuj od poczatku
+
+
+
 
 
 	//diagnostyka
