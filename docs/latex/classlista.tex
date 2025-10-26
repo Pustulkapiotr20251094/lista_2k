@@ -1,0 +1,254 @@
+\doxysection{lista Class Reference}
+\hypertarget{classlista}{}\label{classlista}\index{lista@{lista}}
+
+
+Klasa reprezentujaca liste dwukierunkowa.  
+
+
+
+
+{\ttfamily \#include $<$lista.\+h$>$}
+
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classlista_1_1_iterator}{Iterator}}
+\begin{DoxyCompactList}\small\item\em Klasa wewnetrzna sluzaca do iterowania po liscie do przodu. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classlista_1_1_reverse_iterator}{Reverse\+Iterator}}
+\begin{DoxyCompactList}\small\item\em Klasa wewnetrzna sluzaca do iterowania po liscie od konca. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classlista_a7ae1e1582d5b90e6bc26b8ecd2894072}{lista}} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor domyslny klasy lista. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classlista_af1d37a7f3a46c680114878707002fa04}{\texorpdfstring{$\sim$}{\string~}lista}} ()
+\begin{DoxyCompactList}\small\item\em Destruktor klasy lista. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classlista_a1cb5e7a0c36804f267372cc209c2be5e}{push\+Back}} (int value)
+\begin{DoxyCompactList}\small\item\em Dodaje element na koniec listy. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classlista_aa085b31ae4fa2a96bc376386fd38c34c}{push\+Front}} (int value)
+\begin{DoxyCompactList}\small\item\em Dodaje element na poczatek listy. \end{DoxyCompactList}\item 
+\Hypertarget{classlista_aa8805bd5c6d628b2a2b1e0288284c4af}\label{classlista_aa8805bd5c6d628b2a2b1e0288284c4af} 
+void {\bfseries pop\+Front} ()
+\begin{DoxyCompactList}\small\item\em Usuwa pierwszy element z listy. \end{DoxyCompactList}\item 
+\Hypertarget{classlista_a54aed929f2dc8ffad83ed94822a2cb9a}\label{classlista_a54aed929f2dc8ffad83ed94822a2cb9a} 
+void {\bfseries pop\+Back} ()
+\begin{DoxyCompactList}\small\item\em Usuwa ostatni element z listy. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classlista_a68731f8d556b1b10e696dfdcb6e662e8}{clear}} ()
+\begin{DoxyCompactList}\small\item\em Usuwa wszystkie elementy z listy. \end{DoxyCompactList}\item 
+\Hypertarget{classlista_a47c0eaebdb974601c7a26ed42f7595f9}\label{classlista_a47c0eaebdb974601c7a26ed42f7595f9} 
+void {\bfseries display\+Forward} () const
+\begin{DoxyCompactList}\small\item\em Wyswietla zawartosc listy od poczatku do konca. \end{DoxyCompactList}\item 
+\Hypertarget{classlista_a9a093e437b66d20c49ece00cb00b88fc}\label{classlista_a9a093e437b66d20c49ece00cb00b88fc} 
+void {\bfseries display\+Backward} () const
+\begin{DoxyCompactList}\small\item\em Wyswietla zawartosc listy od konca do poczatku. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classlista_a234315e3f1d88afc3c6957f9acfa5e8d}{insert\+At}} (int index, int value)
+\begin{DoxyCompactList}\small\item\em Dodaje element pod wskazany indeks. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classlista_a1f1e093949430fc68c951879803a3f86}{remove\+At}} (int index)
+\begin{DoxyCompactList}\small\item\em Usuwa element spod wskazanego indeksu. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classlista_a2195b9a611b32ff131046137d7bfc452}{empty}} () const
+\begin{DoxyCompactList}\small\item\em Sprawdza, czy lista jest pusta. \end{DoxyCompactList}\item 
+std\+::size\+\_\+t \mbox{\hyperlink{classlista_a3a2920b8221a07aaf4d3784efc247c4d}{size}} () const
+\begin{DoxyCompactList}\small\item\em Zwraca liczbe elementow w liscie. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classlista_1_1_iterator}{Iterator}} \mbox{\hyperlink{classlista_a7ef29b871755bebfd87168410bf813e5}{get\+Iterator}} () const
+\begin{DoxyCompactList}\small\item\em Zwraca iterator ustawiony na poczatek listy. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classlista_1_1_reverse_iterator}{Reverse\+Iterator}} \mbox{\hyperlink{classlista_aae98562802bec50771ab80adc8c4ee17}{get\+Reverse\+Iterator}} () const
+\begin{DoxyCompactList}\small\item\em Zwraca iterator wsteczny ustawiony na koniec listy. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classlista_a2aa856dc7807c90ec351c077ad15df6a}\label{classlista_a2aa856dc7807c90ec351c077ad15df6a} 
+\mbox{\hyperlink{struct_node}{Node}} \texorpdfstring{$\ast$}{*} {\bfseries head}
+\begin{DoxyCompactList}\small\item\em Wskaznik do pierwszego elementu listy. \end{DoxyCompactList}\item 
+\Hypertarget{classlista_ae7b26b595ed3d25367de0527ac9ca5de}\label{classlista_ae7b26b595ed3d25367de0527ac9ca5de} 
+\mbox{\hyperlink{struct_node}{Node}} \texorpdfstring{$\ast$}{*} {\bfseries tail}
+\begin{DoxyCompactList}\small\item\em Wskaznik do ostatniego elementu listy. \end{DoxyCompactList}\item 
+\Hypertarget{classlista_a16d0c6824a27330ee862b81911c54455}\label{classlista_a16d0c6824a27330ee862b81911c54455} 
+std\+::size\+\_\+t {\bfseries sz}
+\begin{DoxyCompactList}\small\item\em Liczba elementow w liscie. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa reprezentujaca liste dwukierunkowa. 
+
+Klasa lista umozliwia dodawanie, usuwanie i przegladanie elementow, a takze oferuje iteratory do poruszania sie po elementach listy. 
+
+\label{doc-constructors}
+\Hypertarget{classlista_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classlista_a7ae1e1582d5b90e6bc26b8ecd2894072}\index{lista@{lista}!lista@{lista}}
+\index{lista@{lista}!lista@{lista}}
+\doxysubsubsection{\texorpdfstring{lista()}{lista()}}
+{\footnotesize\ttfamily \label{classlista_a7ae1e1582d5b90e6bc26b8ecd2894072} 
+lista\+::lista (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Konstruktor domyslny klasy lista. 
+
+Inicjalizuje pusta liste bez elementow.
+
+Inicjalizuje pusta liste z zerowym rozmiarem i pustymi wskaznikami. \Hypertarget{classlista_af1d37a7f3a46c680114878707002fa04}\index{lista@{lista}!````~lista@{\texorpdfstring{$\sim$}{\string~}lista}}
+\index{````~lista@{\texorpdfstring{$\sim$}{\string~}lista}!lista@{lista}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}lista()}{\string~lista()}}
+{\footnotesize\ttfamily \label{classlista_af1d37a7f3a46c680114878707002fa04} 
+lista\+::\texorpdfstring{$\sim$}{\string~}lista (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Destruktor klasy lista. 
+
+Zwalnia pamiec zajmowana przez elementy listy.
+
+Usuwa wszystkie elementy listy i zwalnia pamiec. 
+
+\label{doc-func-members}
+\Hypertarget{classlista_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classlista_a68731f8d556b1b10e696dfdcb6e662e8}\index{lista@{lista}!clear@{clear}}
+\index{clear@{clear}!lista@{lista}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily \label{classlista_a68731f8d556b1b10e696dfdcb6e662e8} 
+void lista\+::clear (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Usuwa wszystkie elementy z listy. 
+
+Usuwa wszystkie elementy listy.
+
+Wywoluje metode \doxylink{classlista_aa8805bd5c6d628b2a2b1e0288284c4af}{pop\+Front()} az lista stanie sie pusta. \Hypertarget{classlista_a2195b9a611b32ff131046137d7bfc452}\index{lista@{lista}!empty@{empty}}
+\index{empty@{empty}!lista@{lista}}
+\doxysubsubsection{\texorpdfstring{empty()}{empty()}}
+{\footnotesize\ttfamily \label{classlista_a2195b9a611b32ff131046137d7bfc452} 
+bool lista\+::empty (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sprawdza, czy lista jest pusta. 
+
+\begin{DoxyReturn}{Returns}
+true jesli lista nie zawiera elementow. 
+\end{DoxyReturn}
+\Hypertarget{classlista_a7ef29b871755bebfd87168410bf813e5}\index{lista@{lista}!getIterator@{getIterator}}
+\index{getIterator@{getIterator}!lista@{lista}}
+\doxysubsubsection{\texorpdfstring{getIterator()}{getIterator()}}
+{\footnotesize\ttfamily \label{classlista_a7ef29b871755bebfd87168410bf813e5} 
+\mbox{\hyperlink{classlista_1_1_iterator}{Iterator}} lista\+::get\+Iterator (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Zwraca iterator ustawiony na poczatek listy. 
+
+\begin{DoxyReturn}{Returns}
+\doxylink{classlista_1_1_iterator}{Iterator} klasy \doxylink{classlista_1_1_iterator}{Iterator}. 
+\end{DoxyReturn}
+\Hypertarget{classlista_aae98562802bec50771ab80adc8c4ee17}\index{lista@{lista}!getReverseIterator@{getReverseIterator}}
+\index{getReverseIterator@{getReverseIterator}!lista@{lista}}
+\doxysubsubsection{\texorpdfstring{getReverseIterator()}{getReverseIterator()}}
+{\footnotesize\ttfamily \label{classlista_aae98562802bec50771ab80adc8c4ee17} 
+\mbox{\hyperlink{classlista_1_1_reverse_iterator}{Reverse\+Iterator}} lista\+::get\+Reverse\+Iterator (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Zwraca iterator wsteczny ustawiony na koniec listy. 
+
+\begin{DoxyReturn}{Returns}
+Obiekt klasy \doxylink{classlista_1_1_reverse_iterator}{Reverse\+Iterator}. 
+\end{DoxyReturn}
+\Hypertarget{classlista_a234315e3f1d88afc3c6957f9acfa5e8d}\index{lista@{lista}!insertAt@{insertAt}}
+\index{insertAt@{insertAt}!lista@{lista}}
+\doxysubsubsection{\texorpdfstring{insertAt()}{insertAt()}}
+{\footnotesize\ttfamily \label{classlista_a234315e3f1d88afc3c6957f9acfa5e8d} 
+void lista\+::insert\+At (\begin{DoxyParamCaption}\item[{int}]{index}{, }\item[{int}]{value}{}\end{DoxyParamCaption})}
+
+
+
+Dodaje element pod wskazany indeks. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & Pozycja, na ktorej ma zostac dodany element. \\
+\hline
+{\em value} & Wartosc elementu do dodania.\\
+\hline
+{\em index} & Pozycja, na ktorej ma zostac dodany nowy element. \\
+\hline
+{\em value} & Wartosc elementu do dodania. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::out\+\_\+of\+\_\+range} & Jesli indeks jest poza zakresem. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classlista_a1cb5e7a0c36804f267372cc209c2be5e}\index{lista@{lista}!pushBack@{pushBack}}
+\index{pushBack@{pushBack}!lista@{lista}}
+\doxysubsubsection{\texorpdfstring{pushBack()}{pushBack()}}
+{\footnotesize\ttfamily \label{classlista_a1cb5e7a0c36804f267372cc209c2be5e} 
+void lista\+::push\+Back (\begin{DoxyParamCaption}\item[{int}]{value}{}\end{DoxyParamCaption})}
+
+
+
+Dodaje element na koniec listy. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & Wartosc elementu do dodania. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classlista_aa085b31ae4fa2a96bc376386fd38c34c}\index{lista@{lista}!pushFront@{pushFront}}
+\index{pushFront@{pushFront}!lista@{lista}}
+\doxysubsubsection{\texorpdfstring{pushFront()}{pushFront()}}
+{\footnotesize\ttfamily \label{classlista_aa085b31ae4fa2a96bc376386fd38c34c} 
+void lista\+::push\+Front (\begin{DoxyParamCaption}\item[{int}]{value}{}\end{DoxyParamCaption})}
+
+
+
+Dodaje element na poczatek listy. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & Wartosc elementu do dodania. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classlista_a1f1e093949430fc68c951879803a3f86}\index{lista@{lista}!removeAt@{removeAt}}
+\index{removeAt@{removeAt}!lista@{lista}}
+\doxysubsubsection{\texorpdfstring{removeAt()}{removeAt()}}
+{\footnotesize\ttfamily \label{classlista_a1f1e093949430fc68c951879803a3f86} 
+void lista\+::remove\+At (\begin{DoxyParamCaption}\item[{int}]{index}{}\end{DoxyParamCaption})}
+
+
+
+Usuwa element spod wskazanego indeksu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & Pozycja elementu do usuniecia.\\
+\hline
+{\em index} & Pozycja elementu do usuniecia. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::out\+\_\+of\+\_\+range} & Jesli indeks jest poza zakresem. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classlista_a3a2920b8221a07aaf4d3784efc247c4d}\index{lista@{lista}!size@{size}}
+\index{size@{size}!lista@{lista}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily \label{classlista_a3a2920b8221a07aaf4d3784efc247c4d} 
+std\+::size\+\_\+t lista\+::size (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Zwraca liczbe elementow w liscie. 
+
+\begin{DoxyReturn}{Returns}
+Liczba elementow. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{lista_8h}{lista.\+h}}\item 
+src/\mbox{\hyperlink{lista_8cpp}{lista.\+cpp}}\end{DoxyCompactItemize}

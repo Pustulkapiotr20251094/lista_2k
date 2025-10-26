@@ -1,34 +1,51 @@
-﻿#include <iostream>
+﻿/**
+ * @file main.cpp
+ * @brief Program testujacy dzialanie listy dwukierunkowej.
+ *
+ * Plik zawiera funkcje main(), ktora demonstruje dzialanie wszystkich metod
+ * klasy lista. Testuje dodawanie, usuwanie, wyswietlanie oraz iterowanie po liscie.
+ */
+
+#include <iostream>
 #include "lista.h"
 #include "Factory.h"
 
+ /**
+  * @brief Funkcja glowna programu testujacego.
+  *
+  * Funkcja main() prezentuje wszystkie operacje dostepne w klasie lista:
+  * dodawanie elementow (na poczatku, koncu i w srodku listy),
+  * usuwanie elementow, iteracje w przod i w tyl oraz czyszczenie calej listy.
+  *
+  * @return Kod zakonczenia programu (0 - sukces).
+  */
 int main() {
     std::cout << "=== TEST LISTY DWUKIERUNKOWEJ ===\n\n";
 
-    // 🏭 Tworzenie listy przez fabrykę
+    //  Tworzenie listy przez fabryke
     lista* lista = Factory::createLista();
 
-    // --- Dodawanie elementów ---
-    std::cout << "Dodawanie elementów na koniec:\n";
+    // --- Dodawanie elementow ---
+    std::cout << "Dodawanie elementow na koniec:\n";
     lista->pushBack(10);
     lista->pushBack(20);
     lista->pushBack(30);
     lista->displayForward();
 
-    std::cout << "\nDodawanie elementów na początek:\n";
+    std::cout << "\nDodawanie elementow na poczatek:\n";
     lista->pushFront(5);
     lista->pushFront(1);
     lista->displayForward();
 
-    std::cout << "\nDodawanie elementu pod indeks 2 (wartość 15):\n";
+    std::cout << "\nDodawanie elementu pod indeks 2 (wartosc 15):\n";
     lista->insertAt(2, 15);
     lista->displayForward();
 
-    // --- Wyświetlanie listy ---
-    std::cout << "\nWyświetlanie od końca:\n";
+    // --- Wyswietlanie listy ---
+    std::cout << "\nWyswietlanie od konca:\n";
     lista->displayBackward();
 
-    // --- Usuwanie elementów ---
+    // --- Usuwanie elementow ---
     std::cout << "\nUsuwanie pierwszego elementu:\n";
     lista->popFront();
     lista->displayForward();
@@ -41,8 +58,8 @@ int main() {
     lista->removeAt(1);
     lista->displayForward();
 
-    // --- Iterator przód ---
-    std::cout << "\nIteracja po liście (do przodu):\n";
+    // --- Iterator przod ---
+    std::cout << "\nIteracja po liscie (do przodu):\n";
     auto it = lista->getIterator();
     while (it.hasNext()) {
         std::cout << it.next() << " ";
@@ -50,7 +67,7 @@ int main() {
     std::cout << "\n";
 
     // --- Iterator wstecz ---
-    std::cout << "\nIteracja po liście (od końca):\n";
+    std::cout << "\nIteracja po liscie (od konca):\n";
     auto rit = lista->getReverseIterator();
     while (rit.hasPrev()) {
         std::cout << rit.prev() << " ";
@@ -68,7 +85,7 @@ int main() {
     std::cout << "Rozmiar po czyszczeniu: " << lista->size() << "\n";
     std::cout << (lista->empty() ? "Lista pusta" : "Lista zawiera elementy") << "\n";
 
-    delete lista; // zwolnienie pamięci z fabryki
+    delete lista; // zwolnienie pamieci z fabryki
 
     std::cout << "\n=== KONIEC TESTU ===\n";
     return 0;

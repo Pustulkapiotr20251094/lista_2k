@@ -1,0 +1,85 @@
+\doxysection{lista\+::Reverse\+Iterator Class Reference}
+\hypertarget{classlista_1_1_reverse_iterator}{}\label{classlista_1_1_reverse_iterator}\index{lista::ReverseIterator@{lista::ReverseIterator}}
+
+
+Klasa wewnetrzna sluzaca do iterowania po liscie od konca.  
+
+
+
+
+{\ttfamily \#include $<$lista.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classlista_1_1_reverse_iterator_aa5f0de13d6e006696318e53190762c46}{Reverse\+Iterator}} (\mbox{\hyperlink{struct_node}{Node}} \texorpdfstring{$\ast$}{*}start)
+\begin{DoxyCompactList}\small\item\em Konstruktor iteratora wstecznego. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classlista_1_1_reverse_iterator_a659cf71e7d3bbac32a9c250400b2ee97}{has\+Prev}} () const
+\begin{DoxyCompactList}\small\item\em Sprawdza, czy istnieje poprzedni element. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classlista_1_1_reverse_iterator_a6c529921456ae8fe31bbf5f590e34344}{prev}} ()
+\begin{DoxyCompactList}\small\item\em Zwraca wartosc biezacego elementu i przechodzi do poprzedniego. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classlista_1_1_reverse_iterator_a787fe537ffec4ce58354a73034eab36d}\label{classlista_1_1_reverse_iterator_a787fe537ffec4ce58354a73034eab36d} 
+\mbox{\hyperlink{struct_node}{Node}} \texorpdfstring{$\ast$}{*} {\bfseries current}
+\begin{DoxyCompactList}\small\item\em Wskaznik do biezacego elementu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa wewnetrzna sluzaca do iterowania po liscie od konca. 
+
+\label{doc-constructors}
+\Hypertarget{classlista_1_1_reverse_iterator_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classlista_1_1_reverse_iterator_aa5f0de13d6e006696318e53190762c46}\index{lista::ReverseIterator@{lista::ReverseIterator}!ReverseIterator@{ReverseIterator}}
+\index{ReverseIterator@{ReverseIterator}!lista::ReverseIterator@{lista::ReverseIterator}}
+\doxysubsubsection{\texorpdfstring{ReverseIterator()}{ReverseIterator()}}
+{\footnotesize\ttfamily \label{classlista_1_1_reverse_iterator_aa5f0de13d6e006696318e53190762c46} 
+lista\+::\+Reverse\+Iterator\+::\+Reverse\+Iterator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_node}{Node}} \texorpdfstring{$\ast$}{*}}]{start}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Konstruktor iteratora wstecznego. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em start} & Wskaznik do ostatniego elementu listy. \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{classlista_1_1_reverse_iterator_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classlista_1_1_reverse_iterator_a659cf71e7d3bbac32a9c250400b2ee97}\index{lista::ReverseIterator@{lista::ReverseIterator}!hasPrev@{hasPrev}}
+\index{hasPrev@{hasPrev}!lista::ReverseIterator@{lista::ReverseIterator}}
+\doxysubsubsection{\texorpdfstring{hasPrev()}{hasPrev()}}
+{\footnotesize\ttfamily \label{classlista_1_1_reverse_iterator_a659cf71e7d3bbac32a9c250400b2ee97} 
+bool lista\+::\+Reverse\+Iterator\+::has\+Prev (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sprawdza, czy istnieje poprzedni element. 
+
+\begin{DoxyReturn}{Returns}
+true jesli istnieje element przed biezacym. 
+\end{DoxyReturn}
+\Hypertarget{classlista_1_1_reverse_iterator_a6c529921456ae8fe31bbf5f590e34344}\index{lista::ReverseIterator@{lista::ReverseIterator}!prev@{prev}}
+\index{prev@{prev}!lista::ReverseIterator@{lista::ReverseIterator}}
+\doxysubsubsection{\texorpdfstring{prev()}{prev()}}
+{\footnotesize\ttfamily \label{classlista_1_1_reverse_iterator_a6c529921456ae8fe31bbf5f590e34344} 
+int lista\+::\+Reverse\+Iterator\+::prev (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Zwraca wartosc biezacego elementu i przechodzi do poprzedniego. 
+
+\begin{DoxyReturn}{Returns}
+Wartosc aktualnego elementu. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{lista_8h}{lista.\+h}}\end{DoxyCompactItemize}

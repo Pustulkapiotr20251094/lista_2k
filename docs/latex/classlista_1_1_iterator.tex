@@ -1,0 +1,117 @@
+\doxysection{lista\+::Iterator Class Reference}
+\hypertarget{classlista_1_1_iterator}{}\label{classlista_1_1_iterator}\index{lista::Iterator@{lista::Iterator}}
+
+
+Klasa wewnetrzna sluzaca do iterowania po liscie do przodu.  
+
+
+
+
+{\ttfamily \#include $<$lista.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classlista_1_1_iterator_a63912f689a0973fd9cbce3e508d55bc6}{Iterator}} (\mbox{\hyperlink{struct_node}{Node}} \texorpdfstring{$\ast$}{*}start)
+\begin{DoxyCompactList}\small\item\em Konstruktor iteratora. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classlista_1_1_iterator_abcd39a2b0b52f2b846c50b20fbc8a336}{has\+Next}} () const
+\begin{DoxyCompactList}\small\item\em Sprawdza, czy istnieje kolejny element listy. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classlista_1_1_iterator_a3f437789af3c10b5e99ffc8ee324f6ab}{next}} ()
+\begin{DoxyCompactList}\small\item\em Zwraca wartosc biezacego elementu i przechodzi do nastepnego. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classlista_1_1_iterator_a574dbd4b789d2acdf1537f53c1c15c60}{has\+Previous}} () const
+\begin{DoxyCompactList}\small\item\em Sprawdza, czy istnieje poprzedni element listy. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classlista_1_1_iterator_ae4f94033cbf5529666ba439e0d748654}{previous}} ()
+\begin{DoxyCompactList}\small\item\em Zwraca wartosc biezacego elementu i przechodzi do poprzedniego. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classlista_1_1_iterator_a0bc88d08d2daf65615ad2f48639db54d}\label{classlista_1_1_iterator_a0bc88d08d2daf65615ad2f48639db54d} 
+\mbox{\hyperlink{struct_node}{Node}} \texorpdfstring{$\ast$}{*} {\bfseries current}
+\begin{DoxyCompactList}\small\item\em Wskaznik do biezacego elementu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa wewnetrzna sluzaca do iterowania po liscie do przodu. 
+
+Pozwala na przechodzenie po elementach listy bez bezposredniego dostepu do wskaznikow. 
+
+\label{doc-constructors}
+\Hypertarget{classlista_1_1_iterator_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classlista_1_1_iterator_a63912f689a0973fd9cbce3e508d55bc6}\index{lista::Iterator@{lista::Iterator}!Iterator@{Iterator}}
+\index{Iterator@{Iterator}!lista::Iterator@{lista::Iterator}}
+\doxysubsubsection{\texorpdfstring{Iterator()}{Iterator()}}
+{\footnotesize\ttfamily \label{classlista_1_1_iterator_a63912f689a0973fd9cbce3e508d55bc6} 
+lista\+::\+Iterator\+::\+Iterator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_node}{Node}} \texorpdfstring{$\ast$}{*}}]{start}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Konstruktor iteratora. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em start} & Wskaznik do pierwszego elementu listy. \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{classlista_1_1_iterator_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classlista_1_1_iterator_abcd39a2b0b52f2b846c50b20fbc8a336}\index{lista::Iterator@{lista::Iterator}!hasNext@{hasNext}}
+\index{hasNext@{hasNext}!lista::Iterator@{lista::Iterator}}
+\doxysubsubsection{\texorpdfstring{hasNext()}{hasNext()}}
+{\footnotesize\ttfamily \label{classlista_1_1_iterator_abcd39a2b0b52f2b846c50b20fbc8a336} 
+bool lista\+::\+Iterator\+::has\+Next (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sprawdza, czy istnieje kolejny element listy. 
+
+\begin{DoxyReturn}{Returns}
+true jesli istnieje nastepny element. 
+\end{DoxyReturn}
+\Hypertarget{classlista_1_1_iterator_a574dbd4b789d2acdf1537f53c1c15c60}\index{lista::Iterator@{lista::Iterator}!hasPrevious@{hasPrevious}}
+\index{hasPrevious@{hasPrevious}!lista::Iterator@{lista::Iterator}}
+\doxysubsubsection{\texorpdfstring{hasPrevious()}{hasPrevious()}}
+{\footnotesize\ttfamily \label{classlista_1_1_iterator_a574dbd4b789d2acdf1537f53c1c15c60} 
+bool lista\+::\+Iterator\+::has\+Previous (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sprawdza, czy istnieje poprzedni element listy. 
+
+\begin{DoxyReturn}{Returns}
+true jesli istnieje poprzedni element. 
+\end{DoxyReturn}
+\Hypertarget{classlista_1_1_iterator_a3f437789af3c10b5e99ffc8ee324f6ab}\index{lista::Iterator@{lista::Iterator}!next@{next}}
+\index{next@{next}!lista::Iterator@{lista::Iterator}}
+\doxysubsubsection{\texorpdfstring{next()}{next()}}
+{\footnotesize\ttfamily \label{classlista_1_1_iterator_a3f437789af3c10b5e99ffc8ee324f6ab} 
+int lista\+::\+Iterator\+::next (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Zwraca wartosc biezacego elementu i przechodzi do nastepnego. 
+
+\begin{DoxyReturn}{Returns}
+Wartosc aktualnego elementu. 
+\end{DoxyReturn}
+\Hypertarget{classlista_1_1_iterator_ae4f94033cbf5529666ba439e0d748654}\index{lista::Iterator@{lista::Iterator}!previous@{previous}}
+\index{previous@{previous}!lista::Iterator@{lista::Iterator}}
+\doxysubsubsection{\texorpdfstring{previous()}{previous()}}
+{\footnotesize\ttfamily \label{classlista_1_1_iterator_ae4f94033cbf5529666ba439e0d748654} 
+int lista\+::\+Iterator\+::previous (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Zwraca wartosc biezacego elementu i przechodzi do poprzedniego. 
+
+\begin{DoxyReturn}{Returns}
+Wartosc aktualnego elementu. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{lista_8h}{lista.\+h}}\end{DoxyCompactItemize}
