@@ -14,7 +14,7 @@
  /**
   * @brief Pojedynczy wezel listy dwukierunkowej.
   *
-  * Struktura przechowuje wartosc oraz wskazniki do poprzedniego   
+  * Struktura przechowuje wartosc oraz wskazniki do poprzedniego
   * i nastepnego wezla w liscie.
   */
 struct Node {

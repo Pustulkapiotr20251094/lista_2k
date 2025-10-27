@@ -87,6 +87,6 @@ int main() {
 
     delete lista; // zwolnienie pamieci z fabryki
 
-    std::cout << "\n=== KONIEC TESTU ===\n";  
+    std::cout << "\n=== KONIEC TESTU ===\n";
     return 0;
 }
