@@ -20,7 +20,7 @@ lista::lista() : head(nullptr), tail(nullptr), sz(0) {}
 /**
  * @brief Destruktor klasy lista.
  *
- * Usuwa wszystkie elementy listy i zwalnia pamiec.
+ * Usuwa wszystkie elementy listy i zwalnia pamiec.  
  */
 lista::~lista() {
     Node* current = head;

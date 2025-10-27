@@ -21,7 +21,7 @@ class Factory {
 public:
     /**
      * @brief Tworzy nowy obiekt listy dwukierunkowej.
-     *
+     *   
      * Metoda alokuje pamiec dla nowej instancji klasy lista
      * i zwraca wskaznik do niej.
      *

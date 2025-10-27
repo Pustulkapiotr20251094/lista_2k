@@ -35,8 +35,7 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-10-24T08:50:04.743Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -48,8 +47,7 @@
               "RelativeToolTip": "..\\src\\Factory.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-10-24T09:31:48.563Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-24T09:31:48.563Z"
             },
             {
               "$type": "Document",
@@ -59,7 +57,7 @@
               "RelativeDocumentMoniker": "..\\src\\main.cpp",
               "ToolTip": "C:\\Users\\123pi\\Desktop\\lista_2k\\src\\main.cpp",
               "RelativeToolTip": "..\\src\\main.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAAFkAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-10-24T08:50:05.932Z",
               "EditorCaption": ""
@@ -74,8 +72,7 @@
               "RelativeToolTip": "..\\src\\lista.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-10-24T08:50:03.19Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-24T08:50:03.19Z"
             }
           ]
         }
